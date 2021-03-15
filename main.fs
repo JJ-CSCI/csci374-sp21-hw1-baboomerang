@@ -3,7 +3,13 @@ module Assignment
 // Problem 1
 let rec tribn n =
     // write your code here
-    0
+    if n = 0   //case 1
+    then 0
+    elif n = 1 //case 2
+    then 1
+    elif n = 2 //case 3
+    then 1
+    else tribn (n - 1) + tribn (n - 2) + tribn (n - 3)
 
 // Problem 2
 let tribn2 n =
