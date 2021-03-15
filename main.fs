@@ -21,21 +21,19 @@ let tribn2 n =
     // write your code here
     // wait, isnt tribonacci supposed to be 3 numbers?
     // why are we supposed to sum 4 integers?
-    let rec add3 (x:int) (lst:int list) =
-       if x = 3    //0, 1, 2, 3 (4 calls total; 3 elements + 0)
-       then 0
-       else List.head lst + add3 (x + 1) (List.tail lst)
+    //let rec add3 (x:int) (lst:int list) =
+    //   if x = 3    //0, 1, 2, 3 (4 calls total; 3 elements + 0)
+    //   then 0
+    //   else List.head lst + add3 (x + 1) (List.tail lst)
     //Example call:  add4 0 lst :: lst
+    0
 
-
-
-
-
-        
 // Problem 3
 let rec last lst =
     // write your code here
-    0
+    if List.tail lst = []
+    then List.head lst
+    else last (List.tail lst)
 
 // Problem 4
 let fourth (lst:int list) =
