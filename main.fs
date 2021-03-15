@@ -19,12 +19,17 @@ let rec tribn n =
 // Problem 2
 let tribn2 n =
     // write your code here
-    let rec func (total:int) (count:int) (lst:int list) =
-        if List.isEmpty lst
-        then []    // if the list is too small I guess just end it. idk if your tests check for this
-        elif count = 4
-        then total :: lst //prepend the sum to the beginning of the list
-        else 
+    // wait, isnt tribonacci supposed to be 3 numbers?
+    // why are we supposed to sum 4 integers?
+    let rec add3 (x:int) (lst:int list) =
+       if x = 3    //0, 1, 2, 3 (4 calls total; 3 elements + 0)
+       then 0
+       else List.head lst + add3 (x + 1) (List.tail lst)
+    //Example call:  add4 0 lst :: lst
+
+
+
+
 
         
 // Problem 3
