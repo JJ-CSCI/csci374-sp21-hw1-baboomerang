@@ -19,7 +19,7 @@ let rec tribn n =
 // Problem 2
 let tribn2 n =
     // write your code here
-    0
+    let func (x : int) (lst:int list)
 
 // Problem 3
 let rec last lst =
