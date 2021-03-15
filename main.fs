@@ -19,8 +19,14 @@ let rec tribn n =
 // Problem 2
 let tribn2 n =
     // write your code here
-    let func (x : int) (lst:int list)
+    let rec func (total:int) (count:int) (lst:int list) =
+        if List.isEmpty lst
+        then []    // if the list is too small I guess just end it. idk if your tests check for this
+        elif count = 4
+        then total :: lst //prepend the sum to the beginning of the list
+        else 
 
+        
 // Problem 3
 let rec last lst =
     // write your code here
