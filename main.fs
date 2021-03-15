@@ -6,13 +6,13 @@ let rec tribn n =
     if n <= 0    //passes test(-1) and test(0)
     then 0
     elif n = 1   //passes test(3)
-    then 0
+    then 1
     elif n = 2
-    then 0
+    then 1
     else tribn (n - 1) + tribn (n - 2) + tribn (n - 3)
 
-    //3 - 1 = 2
-    //3 - 2 = 1 //this should be 0 in tribonacci
+    //3 - 1 = 2 //this should also be 1 in tribonacci
+    //3 - 2 = 1 //this should be 1 in tribonacci
     //3 - 3 = 0
     //
 
